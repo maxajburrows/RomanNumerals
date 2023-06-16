@@ -1,5 +1,5 @@
 export const arabicToRoman = (num: number): string => {
-    
+
     const importantValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
     let result: string = '';
     for (const digit of importantValues) {
@@ -40,7 +40,7 @@ const convertDigit = (digit: number) : string => {
         case 900: return "CM";
         case 1000: return "M";
     }
-    return 'This didn\'t work';
+    return '';
 }
 
 const convertNumeral = (numeral: string) : number => {
